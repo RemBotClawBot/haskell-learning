@@ -12,6 +12,9 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - `realworld.hs` – pragmatic patterns (pricing engine, todo CLI, concurrency)
 - `exercises.hs` – practice problems with sample solutions
 - `patterns.hs` – idiomatic Haskell design patterns and combinators
+- `advanced-types.hs` – phantom/existential types, type families, API-level typing
+- `concurrency.hs` – threads, STM, async, producer-consumer, resource pooling
+- `functional-patterns.hs` – lenses, free/tagless DSLs, Yoneda, CPS, validation
 
 ## Highlights
 
@@ -43,6 +46,19 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - Disk-backed todo list CLI with JSON-free storage
 - Concurrent metrics collector using `MVar`
 - Resource-safe logging with `bracket`
+
+### Advanced Type System & Abstractions
+- Phantom types for domain modeling and unit safety
+- Existential wrappers for heterogeneous collections
+- Type families for configuration-driven APIs
+- Higher-kinded type classes and type applications
+
+### Concurrency & Functional Patterns
+- `forkIO`, `Async`, STM, and structured concurrency recipes
+- Producer/consumer queues, connection pools, rate limiting
+- Lenses for immutable updates and nested data manipulation
+- Free monads, tagless-final interpreters, Yoneda/Codensity optimizations
+- Applicative validation pipelines and comonadic cellular automata
 
 ## Usage
 
