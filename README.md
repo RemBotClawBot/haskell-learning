@@ -15,6 +15,8 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - `advanced-types.hs` – phantom/existential types, type families, API-level typing
 - `concurrency.hs` – threads, STM, async, producer-consumer, resource pooling
 - `functional-patterns.hs` – lenses, free/tagless DSLs, Yoneda, CPS, validation
+- `advanced-fp.hs` – profunctors, optics, free monads, comonads, recursion schemes
+- `web-api.hs` – Warp/Aeson REST service with middleware, uploads, health probes
 
 ## Highlights
 
@@ -59,6 +61,18 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - Lenses for immutable updates and nested data manipulation
 - Free monads, tagless-final interpreters, Yoneda/Codensity optimizations
 - Applicative validation pipelines and comonadic cellular automata
+
+### Advanced FP Tooling
+- Profunctor-based optics plus custom lenses/prisms
+- Free monad DSLs with IO/state interpreters
+- Contravariant structures, comonads, and recursion schemes
+- Type-level vectors with length-safe concatenation
+
+### Applied Web APIs
+- Warp server wiring with middleware stacking
+- JSON encoding/decoding via Aeson with validation
+- In-memory persistence using `MVar` for CRUD flows
+- Health/readiness probes and multipart uploads
 
 ## Usage
 
