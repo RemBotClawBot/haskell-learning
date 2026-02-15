@@ -24,6 +24,9 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - `type-level.hs` – type-level programming, singletons, type families, dependent types
 - `parsers.hs` – monadic parser combinators, JSON parsing, arithmetic expressions
 - `transformers.hs` – advanced monad transformers, capability type classes, real-world stacks
+- `quickcheck-properties.hs` – advanced property-based testing patterns and generators
+- `performance-optimization.hs` – strictness control, memoization, vector usage, benchmarking
+- `haskell-tooling.hs` – package management, testing frameworks, CI/CD, development tools
 
 ## Highlights
 
@@ -114,6 +117,35 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - In-memory persistence using `MVar` for CRUD flows
 - Health/readiness probes and multipart uploads
 
+### Advanced Property-Based Testing
+- Custom generators for complex data types
+- Property combinators and conditional testing
+- Shrinking demonstrations and failure minimization
+- Stateful property testing with STM
+- Round-trip properties and invariant preservation
+- Performance testing with timeouts and memory bounds
+
+### Performance Optimization Techniques
+- Strictness control with bang patterns and strict data types
+- Memory profiling and space leak detection
+- Vector vs list performance comparisons
+- Cache-friendly data structures (SoA vs AoS)
+- Loop fusion and rewrite rules
+- Inlining and specialization pragmas
+- Unboxed types and primitive operations
+- Worker pools and parallel execution patterns
+- Stream fusion and lazy evaluation control
+
+### Haskell Development Tooling
+- Cabal and Stack package configuration
+- Hspec test suites and Criterion benchmarks
+- Git hooks for automated quality checks
+- CI/CD pipelines with GitHub Actions
+- Docker configurations for deployment
+- Editor setup with Haskell Language Server
+- Documentation generation with Haddock
+- Dependency management and version bounds
+
 ## Usage
 
 Run any example directly with `runghc`:
@@ -140,5 +172,8 @@ ghc -O2 realworld.hs -o realworld
 6. Reinforce with the prompts inside `exercises.hs`
 7. Dive into advanced FP with `advanced-fp.hs` and `category-theory.hs`
 8. Study practical applications with `web-api.hs` and `effect-systems.hs`
+9. Master property-based testing with `quickcheck-properties.hs`
+10. Optimize code with `performance-optimization.hs`
+11. Set up development environment with `haskell-tooling.hs`
 
 All samples are intentionally dependency-light and stick to `base` so they work out of the box with GHC.
