@@ -17,6 +17,10 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - `functional-patterns.hs` – lenses, free/tagless DSLs, Yoneda, CPS, validation
 - `advanced-fp.hs` – profunctors, optics, free monads, comonads, recursion schemes
 - `web-api.hs` – Warp/Aeson REST service with middleware, uploads, health probes
+- `category-theory.hs` – categorical intuition for functors, natural transformations, Yoneda
+- `testing.hs` – manual tests, QuickCheck properties, generators, model-based testing
+- `pure-functional.hs` – referential transparency, immutable pipelines, lazy streams
+- `effect-systems.hs` – ReaderT/ExceptT stacks, capability type classes, pure interpreters
 
 ## Highlights
 
@@ -67,6 +71,21 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - Free monad DSLs with IO/state interpreters
 - Contravariant structures, comonads, and recursion schemes
 - Type-level vectors with length-safe concatenation
+
+### Category Theory Foundations
+- Category class implementation, functor laws, and natural transformations
+- Yoneda lemma encoding plus comonads (NonEmpty, Store)
+- Adjunction intuition via free/forgetful functors and Day convolution
+
+### Testing & Property-Based Workflows
+- Manual sanity checks plus QuickCheck suites and custom generators
+- Data modeling for Arbitrary instances, round-trip properties, and shrinking
+- Model-based tests, monoid/functor/monad law verification helpers
+
+### Effect Systems & Transformers
+- ReaderT/ExceptT/WriterT stack with capability type classes
+- Production runner vs pure `StateT` interpreter for deterministic tests
+- Real-world checkout flow with logging, metrics, retries, and exercises
 
 ### Applied Web APIs
 - Warp server wiring with middleware stacking
