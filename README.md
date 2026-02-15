@@ -27,6 +27,9 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - `quickcheck-properties.hs` – advanced property-based testing patterns and generators
 - `performance-optimization.hs` – strictness control, memoization, vector usage, benchmarking
 - `haskell-tooling.hs` – package management, testing frameworks, CI/CD, development tools
+- `dependent-types.hs` – Σ-types, Π-types, singletons, length-indexed vectors, type-safe operations
+- `parallelism.hs` – parallel evaluation, strategies, map-reduce, parallel algorithms, benchmarking
+- `template-haskell.hs` – metaprogramming, code generation, quasi-quoters, DSL implementation
 
 ## Highlights
 
@@ -145,6 +148,38 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - Editor setup with Haskell Language Server
 - Documentation generation with Haddock
 - Dependency management and version bounds
+
+### Dependent Types
+- Σ-types (dependent pairs) and Π-types (dependent functions)
+- Singletons bridging runtime values and compile-time types
+- Length-indexed vectors with bounds-safe operations
+- Type-safe matrix operations with dimension tracking
+- Type-state patterns for valid state transitions
+- Runtime value to type-level proof promotion
+- Red-black trees with balancing invariants at type level
+- Type-safe units of measurement and database queries
+
+### Parallel Programming
+- Parallel evaluation primitives (`par`, `pseq`)
+- Evaluation strategies (`rpar`, `rseq`, `parList`)
+- Data parallelism patterns and matrix operations
+- Parallel Monte Carlo simulation and sorting algorithms
+- Map-reduce framework implementation
+- Parallel stream processing with work stealing
+- Parallel graph algorithms (BFS)
+- Benchmarking and performance optimization
+- Parallelism vs concurrency distinctions
+
+### Template Haskell & Metaprogramming
+- Template Haskell basics and syntax tree manipulation
+- Automatic generation of data types and type class instances
+- Domain-specific language (DSL) implementation
+- Compile-time computation and code optimization
+- Type-driven code generation
+- Quasi-quotations for embedded DSLs (SQL, regex, HTML)
+- Macros and metaprogramming utilities
+- Compile-time validation and code analysis
+- Real-world TH applications (JSON serialization, lenses)
 
 ## Usage
 
