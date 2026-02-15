@@ -21,6 +21,9 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - `testing.hs` – manual tests, QuickCheck properties, generators, model-based testing
 - `pure-functional.hs` – referential transparency, immutable pipelines, lazy streams
 - `effect-systems.hs` – ReaderT/ExceptT stacks, capability type classes, pure interpreters
+- `type-level.hs` – type-level programming, singletons, type families, dependent types
+- `parsers.hs` – monadic parser combinators, JSON parsing, arithmetic expressions
+- `transformers.hs` – advanced monad transformers, capability type classes, real-world stacks
 
 ## Highlights
 
@@ -87,6 +90,24 @@ This repository distills core and advanced Haskell concepts into small, runnable
 - Production runner vs pure `StateT` interpreter for deterministic tests
 - Real-world checkout flow with logging, metrics, retries, and exercises
 
+### Type-Level Programming
+- Singleton types for natural numbers and type-level vectors
+- Type families for compile-time computation
+- GADTs for type-safe indexing and heterogeneous collections
+- Practical examples: type-safe matrix operations, unit systems, configuration
+
+### Parser Combinators
+- Building monadic parser combinators from scratch
+- JSON parser implementation with recursive structure
+- Arithmetic expression parsing with operator precedence
+- CSV and configuration file parsing patterns
+
+### Advanced Monad Transformers
+- Layered transformer stacks for real applications
+- Capability type classes vs direct transformer usage
+- Free monad DSLs vs tagless-final approaches
+- Error recovery with exponential backoff and testing with pure interpreters
+
 ### Applied Web APIs
 - Warp server wiring with middleware stacking
 - JSON encoding/decoding via Aeson with validation
@@ -115,6 +136,9 @@ ghc -O2 realworld.hs -o realworld
 2. Move to `typesystem.hs` for a deeper dive
 3. Study `monads.hs` alongside `lazyeval.hs`
 4. Apply concepts in `realworld.hs` and `patterns.hs`
-5. Reinforce with the prompts inside `exercises.hs`
+5. Explore advanced topics: `type-level.hs`, `parsers.hs`, and `transformers.hs`
+6. Reinforce with the prompts inside `exercises.hs`
+7. Dive into advanced FP with `advanced-fp.hs` and `category-theory.hs`
+8. Study practical applications with `web-api.hs` and `effect-systems.hs`
 
 All samples are intentionally dependency-light and stick to `base` so they work out of the box with GHC.
