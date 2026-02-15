@@ -176,4 +176,7 @@ ghc -O2 realworld.hs -o realworld
 10. Optimize code with `performance-optimization.hs`
 11. Set up development environment with `haskell-tooling.hs`
 
-All samples are intentionally dependency-light and stick to `base` so they work out of the box with GHC.
+Most samples are intentionally dependency-light and stick to `base` so they work out of the box with GHC.
+Some advanced modules (`quickcheck-properties.hs`, `performance-optimization.hs`) demonstrate real-world
+scenarios and require external packages (QuickCheck, vector, bytestring, text). Use `COMPILE_CHECK.sh`
+to see which files need dependencies.
